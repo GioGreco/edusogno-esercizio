@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #d9e5f3;
+}
+
+/* HEADER STYLE */
+header{
+    box-shadow: 0 8px 6px -6px rgb(0, 128, 255);
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+header img{
+    filter: invert(100%);
+    height: 100%;
+}
+
+main{
+    height: calc(100vh - 120px);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.popup-message{
+    background-color: palegreen;
+    color: white;
+    text-align: center;
+}
+
+#login main h1{
+    font-size: 2.2rem;
+    letter-spacing: .1rem;
+    margin-bottom: 10px;
+    color: #134077
+}
+
+#register main h1{
+    font-size: 2.2rem;
+    letter-spacing: .1rem;
+    margin-bottom: 10px;
+    color: #134077
+}
+
+/* LOGIN/REGISTER FORM STYLE */
+.data-form{
+    background-color: white;
+    padding: 25px 40px;
+    height: 70%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 20px;
+    border: 1px solid blue
+}
+
+.data-form .formField{
+    display: flex;
+    flex-direction: column;
+}
+
+.data-form .formField label{
+    margin-bottom: 5px;
+    letter-spacing: .1rem;
+}
+
+.data-form .formField input{
+    padding: 10px;
+    font-size: 1.2rem;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    color: #134077
+}
+
+.data-form .formField button{
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    color: white;
+    padding: 15px 0;
+    background-color: #0057ff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.data-form .formField a{
+    text-align: center;
+    padding: 5px 0;
+}
+
+.data-form .toRegistration{
+    text-align: center;
+}
+
+/* PERSONAL AREA PAGE*/
+#events .logout{
+    background-color: palevioletred;
+    padding: 5px 15px;
+    border-radius: 15px;
+    margin: 0 20px;
+}
+
+#events .logout a{
+    color: white;
+    text-decoration: none;
+}
+
+#events main h1{
+    font-size: 2.2rem;
+    letter-spacing: .1rem;
+    margin-bottom: 10px;
+    color: #134077
+}
+
+#events main .username{
+    text-transform: uppercase;
+}
+
+#events main .eventsRow{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#events main .eventsRow .single-event{
+    width: calc(100% / 3 - 60px);
+    height: 200px;
+    padding: 30px;
+    margin: 20px 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 20px;
+    border: 1px solid blue
+}
+
+#events main .eventsRow .single-event h2{
+    font-size: 2rem;
+    letter-spacing: .1rem;
+}
+
+#events main .eventsRow .single-event p{
+    font-size: 1.2rem;
+    color: rgb(184, 184, 184);
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+}
+
+#events main .eventsRow .single-event button{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: white;
+    padding: 5px 0;
+    background-color: #0057ff;
+    border-radius: 10px;
+    cursor: pointer;
+}
