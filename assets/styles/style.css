@@ -54,6 +54,19 @@ main{
     color: #134077
 }
 
+#recoverPsw main h1{
+    font-size: 2.2rem;
+    letter-spacing: .1rem;
+    margin-bottom: 10px;
+    color: #134077
+}
+
+#recoverPsw main .desc{
+    font-size: .9rem;
+    color: gray;
+    text-align: center;
+}
+
 /* LOGIN/REGISTER FORM STYLE */
 .data-form{
     background-color: white;
@@ -70,6 +83,7 @@ main{
 .data-form .formField{
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .data-form .formField label{
@@ -83,7 +97,7 @@ main{
     border: none;
     border-bottom: 1px solid black;
     outline: none;
-    color: #134077
+    color: #134077;
 }
 
 .data-form .formField button{
@@ -105,12 +119,28 @@ main{
     text-align: center;
 }
 
+.data-form i{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    cursor: pointer;
+}
+
+.data-form .active{
+    color: #0057ff;
+}
+
 /* PERSONAL AREA PAGE*/
 #events .logout{
     background-color: palevioletred;
     padding: 5px 15px;
     border-radius: 15px;
     margin: 0 20px;
+}
+
+#events h3{
+    text-align: center;
 }
 
 #events .logout a{
@@ -133,7 +163,7 @@ main{
     width: 90%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 #events main .eventsRow .single-event{
@@ -152,6 +182,7 @@ main{
 #events main .eventsRow .single-event h2{
     font-size: 2rem;
     letter-spacing: .1rem;
+    text-align: center;
 }
 
 #events main .eventsRow .single-event p{

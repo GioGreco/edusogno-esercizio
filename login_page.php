@@ -30,11 +30,12 @@ session_destroy();
       <div class="formField">
         <label for="password">Inserisci la password</label>
         <input type="password" name="password" id="password" placeholder="Scrivila qui"/>
+        <i id="hidePsw" class="fa-solid fa-eye"></i>
       </div>
 
       <div class="formField">
         <button type="submit">Accedi</button>
-        <a href="#">Forgot password?</a>
+        <a href="./recoverPsw_page.php">Password dimenticata?</a>
       </div>
 
       <div class="toRegistration">
@@ -43,33 +44,6 @@ session_destroy();
     </form>
   </main>
 </section>
-
-<!-- <form method="POST" action="./server/login.php">
-                  <p>Please login to your account</p>
-
-                  <div class="form-outline mb-4">
-                    <input type="email" name="email" id="email" class="form-control"
-                      placeholder="Phone number or email address" />
-                    <label class="form-label" for="email">Username</label>
-                  </div>
-
-                  <div class="form-outline mb-4">
-                    <input type="password" name="password" id="password" class="form-control" />
-                    <label class="form-label" for="password">Password</label>
-                  </div>
-
-                  <div class="text-center pt-1 mb-5 pb-1">
-                    <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit">Log
-                      in</button>
-                    <a class="text-muted" href="#!">Forgot password?</a>
-                  </div>
-
-                  <div class="d-flex align-items-center justify-content-center pb-4">
-                    <p class="mb-0 me-2">Don't have an account?</p>
-                    <button type="button" id="registerBtn" class="btn btn-outline-danger">Create new</button>
-                  </div>
-
-                </form> -->
 <?php
 include __DIR__.'/assets/partials/footer.php';
 ?>

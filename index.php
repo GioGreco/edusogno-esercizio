@@ -46,12 +46,21 @@ include __DIR__.'/assets/partials/header.php';
 
         <div class="eventsRow">
             <?php
-                foreach($attendingEvents as $event){
+                if(count($attendingEvents) > 0){
+                    foreach($attendingEvents as $event){
+                
             ?>
                 <div class="single-event">
                     <h2> <?php echo $event['nome_evento'] ?> </h2>
                     <p> <?php echo $event['data_evento']?> </p>
                     <button>Join</button>
+                </div>
+            <?php
+                    }
+                } else {
+            ?>
+                <div>
+                    <h3>Non ci sono eventi presenti nella tua lista.</h3>
                 </div>
             <?php
                 }

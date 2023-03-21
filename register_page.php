@@ -1,21 +1,6 @@
 <?php
 include __DIR__.'/assets/partials/header.php';
 ?>
-<!-- <form method="POST" action="./server/register.php">
-    <label for="nome">Nome:</label>
-    <input type="text" id="nome" name="nome" required><br>
-
-    <label for="cognome">Cognome:</label>
-    <input type="text" id="cognome" name="cognome" required><br>
-
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required><br>
-
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required><br>
-
-    <input type="submit" value="Registrati">
-  </form> -->
 
   <section id="register">
   <header>
@@ -45,11 +30,12 @@ include __DIR__.'/assets/partials/header.php';
       <div class="formField">
         <label for="password">Inserisci la password</label>
         <input type="password" name="password" id="password" placeholder="Scrivila qui"/>
+        <i id="hidePsw" class="fa-solid fa-eye"></i>
       </div>
 
       <div class="formField">
         <button type="submit">Registrati</button>
-        <a href="#">Forgot password?</a>
+        <a href="./recoverPsw_page.php">Password dimenticata?</a>
       </div>
 
       <div class="toRegistration">
