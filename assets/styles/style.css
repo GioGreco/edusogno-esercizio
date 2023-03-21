@@ -35,7 +35,7 @@ main{
 }
 
 .popup-message{
-    background-color: palegreen;
+    background-color: rgb(136, 189, 136);
     color: white;
     text-align: center;
 }
@@ -129,6 +129,10 @@ main{
 
 .data-form .active{
     color: #0057ff;
+}
+
+.data-form .input-error{
+    border-bottom: 1px solid red !important;
 }
 
 /* PERSONAL AREA PAGE*/

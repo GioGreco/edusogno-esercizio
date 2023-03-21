@@ -19,7 +19,7 @@ session_destroy();
     </div>
   </header>
   <main>
-    <h1>Hai già un account?</h1>
+    <h1 id="title">Hai già un account?</h1>
     <form class="data-form" method="POST" action="./server/login.php">
 
       <div class="formField">

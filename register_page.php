@@ -9,7 +9,7 @@ include __DIR__.'/assets/partials/header.php';
     </div>
   </header>
   <main>
-    <h1>Crea il tuo account</h1>
+    <h1 id="title">Crea il tuo account</h1>
     <form class="data-form" method="POST" action="./server/register.php">
 
       <div class="formField">
